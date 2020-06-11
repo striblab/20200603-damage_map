@@ -68,9 +68,10 @@ const map = new mapboxgl.Map({
   minZoom: 12,
   maxZoom: 16,
   maxBounds: [-97.25, 43.2, -89.53, 49.5],
-  scrollZoom: false,
-  interactive: false
+  scrollZoom: false
 });
+
+$("#mapmain").css('pointer-events','none');
 
 /********** SPECIAL RESET BUTTON **********/
 class HomeReset {
@@ -114,11 +115,14 @@ map.keyboard.disable();
 if (utils.isMobile()) {
   map.dragRotate.disable();
   map.touchZoomRotate.disableRotation();
-} else {
+} 
 
-  // map.getCanvas().style.cursor = 'pointer';
-  // map.addControl(new mapboxgl.NavigationControl({ showCompass: false }),'top-right');
-  // map.addControl(toggleControl,'top-right');
+if (selected == null) {
+  $("#nameSpace").html("");
+  map.getCanvas().style.cursor = 'pointer';
+  map.addControl(new mapboxgl.NavigationControl({ showCompass: false }),'top-left');
+  map.addControl(toggleControl,'top-left');
+  $("#mapmain").css('pointer-events','all');
 
   $('.my-custom-control').on('click', function(){
     map.jumpTo({
