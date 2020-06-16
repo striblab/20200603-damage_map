@@ -110,13 +110,13 @@ var scale = new mapboxgl.ScaleControl({
   map.addControl(scale)
 
 // Setup basic map controls
-map.scrollZoom.disable();
 
 // map.dragPan.disable();
 if (utils.isMobile() || selected != null) {
   map.keyboard.disable();
   map.dragRotate.disable();
   map.touchZoomRotate.disableRotation();
+  map.scrollZoom.disable();
 } 
 
 if (selected == null) {
