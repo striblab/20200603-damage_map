@@ -71,7 +71,7 @@ const map = new mapboxgl.Map({
   scrollZoom: false
 });
 
-$("#mapmain").css('pointer-events','none');
+// $("#mapmain").css('pointer-events','none');
 
 /********** SPECIAL RESET BUTTON **********/
 class HomeReset {
@@ -110,9 +110,11 @@ var scale = new mapboxgl.ScaleControl({
   map.addControl(scale)
 
 // Setup basic map controls
-map.keyboard.disable();
+map.scrollZoom.disable();
+
 // map.dragPan.disable();
-if (utils.isMobile()) {
+if (utils.isMobile() || selected != null) {
+  map.keyboard.disable();
   map.dragRotate.disable();
   map.touchZoomRotate.disableRotation();
 } 
@@ -122,7 +124,6 @@ if (selected == null) {
   map.getCanvas().style.cursor = 'pointer';
   map.addControl(new mapboxgl.NavigationControl({ showCompass: false }),'top-left');
   map.addControl(toggleControl,'top-left');
-  $("#mapmain").css('pointer-events','all');
 
   $('.my-custom-control').on('click', function(){
     map.jumpTo({
@@ -183,10 +184,20 @@ map.on('load', function() {
           'circle-color': [
             'match',
             ['get', 'damage_cat'],
+            'Minor property damage',
+            '#F2E0C7',
             'Property damage',
-            '#DEA381',
+            '#F2E0C7',
+            'Medium property damage',
+            '#F2E0C7',
+            'Severe property damage',
+            '#F2E0C7',
             'Fire',
-            '#8F4B31',
+            '#C28059',
+            'Severe fire damage',
+            '#C28059',
+            'Destroyed',
+            '#9E403C',
             '#ccc'
             ]
        }

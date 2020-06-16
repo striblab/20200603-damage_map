@@ -190,8 +190,9 @@ text {
 
 $candColors: (
   building: #888888,
-  business: #DEA381,
-  fire: #8F4B31,
+  business: #F2E0C7,
+  fire: #C28059,
+  destroyed: #9E403C,
 );
 
 @each $cand, $color in $candColors {
