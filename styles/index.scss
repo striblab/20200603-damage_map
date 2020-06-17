@@ -142,7 +142,7 @@ text {
 #map {
   position:relative;
   width:100%;
-  max-height:450px;
+  max-height:550px;
 }
 
 #nameSpace {
@@ -189,10 +189,11 @@ text {
 
 
 $candColors: (
+  damage: #FD8D3C,
   building: #aaaaaa,
-  business: #F2E0C7,
-  fire: #C28059,
-  destroyed: #9E403C,
+  business: #FDBE85,
+  fire: #E6550D,
+  destroyed: #A63603,
 );
 
 @each $cand, $color in $candColors {

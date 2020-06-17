@@ -186,7 +186,7 @@ map.on('load', function() {
           'circle-radius': 4,
           'circle-stroke-width': 0.1,
           'circle-stroke-color': '#333333',
-          'circle-color': '#F2E0C7'
+          'circle-color': '#FD8D3C'
        }
   });
 
@@ -207,19 +207,19 @@ map.on('load', function() {
             'match',
             ['get', 'damage_cat'],
             'Minor property damage',
-            '#F2E0C7',
+            '#FDBE85',
             'Property damage',
-            '#F2E0C7',
+            '#FDBE85',
             'Medium property damage',
-            '#F2E0C7',
+            '#FDBE85',
             'Severe property damage',
-            '#F2E0C7',
+            '#FDBE85',
             'Fire',
-            '#C28059',
+            '#E6550D',
             'Severe fire damage',
-            '#C28059',
+            '#E6550D',
             'Destroyed',
-            '#9E403C',
+            '#A63603',
             '#ccc'
             ]
        }
