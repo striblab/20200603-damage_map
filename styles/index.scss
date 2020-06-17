@@ -189,7 +189,7 @@ text {
 
 
 $candColors: (
-  building: #888888,
+  building: #aaaaaa,
   business: #F2E0C7,
   fire: #C28059,
   destroyed: #9E403C,
@@ -197,7 +197,7 @@ $candColors: (
 
 @each $cand, $color in $candColors {
   .mapboxgl-popup .label-#{$cand},
-  #map-legend .label-#{$cand} {
+  #map-legend .label-#{$cand}, #map-legend2 .label-#{$cand} {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -214,7 +214,7 @@ th.right {
   text-align: right;
 }
 
-#map-legend .label-no-votes {
+#map-legend .label-no-votes, #map-legend2 .label-no-votes {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -258,7 +258,7 @@ th.right {
 
 /********** LEGEND *********/
 
-#map-legend {
+#map-legend, #map-legend2 {
   background-color:rgba(255, 255, 255, 0.7);;
   position:absolute;
   top: 30px;
@@ -280,7 +280,7 @@ th.right {
   }
 
   @media only screen and (max-width: 500px) {
-    width:100%;
+    width:97%;
     position:static;
     display:block;
     margin-left:auto;
