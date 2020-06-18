@@ -1,13 +1,6 @@
-{"frames":[{"name":"EAST LAKE STREET, NEAR HIAWATHA","longitude":-93.236405,"latitude":44.948149,"zoom":14.5},
+{"frames":[{"name":"EAST LAKE STREET, NEAR HIAWATHA","longitude":-93.236405,"latitude":44.948149,"zoom":14},
     {"name":"LAKE STREET, BETWEEN PARK AND HIAWATHA","longitude":-93.25629,"latitude":44.95006,"zoom":14},
     {"name":"LAKE STREET NEAR I-35W","longitude":-93.278061,"latitude":44.948421,"zoom":14.5},
     {"name":"WEST LAKE STREET AND UPTOWN","longitude":-93.29318,"latitude":44.95196,"zoom":14},
-    {"name":"EAST LAKE STREET NEAR MISSISSIPPI RIVER","longitude":-93.21563,"latitude":44.94862,"zoom":14.5},
     {"name":"DOWNTOWN MINNEAPOLIS","longitude":-93.265015,"latitude":44.977753,"zoom":14},
-    {"name":"NORTH MINNEAPOLIS","longitude":-93.295831,"latitude":44.999666,"zoom":14},
-    {"name":"NORTHEAST MINNEAPOLIS","longitude":-93.23498,"latitude":45.00975,"zoom":14},
-    {"name":"SOUTH OF LAKE STREET","longitude":-93.252399,"latitude":44.930514,"zoom":14},
-    {"name":"ST. PAUL MIDWAY NEAR UNIVERSITY & SNELLING","longitude":-93.153734,"latitude":44.956053,"zoom":14},
-    {"name":"ST. PAUL, SOUTH OF I-94","longitude":-93.16704,"latitude":44.926997,"zoom":14},
-    {"name":"EAST OF ST. PAUL MIDWAY","longitude":-93.093548,"latitude":44.943842,"zoom":14},
-    {"name":"NORTHERN ST. PAUL AND ROSEVILLE","longitude":-93.102675,"latitude":44.990939,"zoom":14}]}
+    {"name":"NORTH MINNEAPOLIS","longitude":-93.295831,"latitude":44.999666,"zoom":14}]}

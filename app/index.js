@@ -27,9 +27,9 @@ let popover = new Popover('#map-popover');
 
 var mapframes = frames.frames;
 
-let center = [-93.204818,44.956389];
+let center = [-93.177194,44.958365];
 let name = mapframes[0].name;
-let zoom = 12;
+let zoom = 10.5;
 
 $.urlParam = function(name) {
   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -132,7 +132,7 @@ if (selected == null) {
   $('.my-custom-control').on('click', function(){
     map.jumpTo({
       center: center,
-      zoom: 12,
+      zoom: zoom,
     });
   });
 }
@@ -245,6 +245,11 @@ map.on('load', function() {
       );
     }
   });
+
+  map.setPaintProperty(
+    'water',
+    'fill-color','#ededed' 
+  );
   
 
   popup = new mapboxgl.Popup({
