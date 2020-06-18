@@ -282,3 +282,23 @@ map.on('load', function() {
     });
 
 });
+
+
+$(document).ready(function() {
+  if (($("#map").width() < 600) && (selected == null)) {
+      map.flyTo({
+          center: [-93.265329,44.957907]
+      });
+  }
+  $(window).resize(function() {
+      if (($("#map").width() < 600) && (selected == null)){
+          map.flyTo({
+              center: [-93.265329,44.957907]
+          });
+      } else {
+          map.flyTo({
+              center: center
+          });
+      }
+  });
+});
