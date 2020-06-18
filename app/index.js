@@ -67,7 +67,7 @@ const map = new mapboxgl.Map({
   style: 'mapbox://styles/startribune/ck1b7427307bv1dsaq4f8aa5h',
   center: center,
   zoom: zoom,
-  minZoom: 12,
+  minZoom: 10.5,
   maxZoom: 16,
   maxBounds: [-97.25, 43.2, -89.53, 49.5],
   scrollZoom: false
