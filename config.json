@@ -42,7 +42,7 @@
     "default": {
       "bucket": "static.startribune.com",
       "path": "news/projects-staging/all/20200603-damage_map",
-      "url": "http://static.startribune.com/news/projects-staging/all/20200603-damage_map",
+      "url": "https://static.startribune.com/news/projects-staging/all/20200603-damage_map",
       "cacheSeconds": 30
     },
     "testing": {
@@ -54,7 +54,7 @@
     "production": {
       "bucket": "static.startribune.com",
       "path": "news/projects/all/20200603-damage_map",
-      "url": "http://static.startribune.com/news/projects/all/20200603-damage_map",
+      "url": "https://static.startribune.com/news/projects/all/20200603-damage_map",
       "cacheSeconds": 600
     }
   }
