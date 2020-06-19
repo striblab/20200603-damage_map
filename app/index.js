@@ -119,11 +119,13 @@ if (utils.isMobile() || selected != null) {
   map.touchZoomRotate.disableRotation();
   map.scrollZoom.disable();
   $("#map").css("pointer-events","none");
+  $(".directional").hide();
 } 
 
 if (selected == null) {
   $("#nameSpace").html("");
   $("#map-legend").hide();
+  $(".directional").show();
   $("#map-legend2").show();
   map.getCanvas().style.cursor = 'pointer';
   map.addControl(new mapboxgl.NavigationControl({ showCompass: false }),'top-left');
