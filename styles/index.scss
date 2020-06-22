@@ -306,9 +306,7 @@ th.right {
     margin-bottom:20px;
 
     #legend-items {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      text-align:left;
     }
 
     strong {
