@@ -306,7 +306,6 @@ th.right {
     margin-bottom:20px;
 
     #legend-items {
-      display:flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
@@ -318,8 +317,8 @@ th.right {
     }
 
     .candidate {
-      display: block;
-      flex: 1 0 75px;
+      display: inline-block;
+      width: 48%;
     }
   }
 
