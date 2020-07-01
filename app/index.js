@@ -15,6 +15,7 @@ import utilsFn from './utils.js';
 import buildings from '../sources/buildings_damaged_final.json';
 import dots from '../sources/buildings_damaged.json';
 import frames from '../sources/mapframes.json';
+import precincts from '../sources/precincts.json';
 
 const utils = utilsFn({});
 
@@ -29,7 +30,7 @@ var mapframes = frames.frames;
 
 let center = [-93.177194,44.958365];
 let name = mapframes[0].name;
-let zoom = 10.5;
+let zoom = 11.5;
 
 $.urlParam = function(name) {
   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -226,6 +227,46 @@ map.on('load', function() {
             ]
        }
   });
+
+//   map.addSource('precincts', {
+//     type: 'geojson',
+//     data: precincts
+//   });
+
+//   map.addLayer({
+//     'id': 'precincts-layer',
+//     'interactive': true,
+//     'source': 'precincts',
+//     'minzoom': zoomThreshold,
+//     'layout': {},
+//     'type': 'circle',
+//      'paint': {
+//         'circle-opacity': 1,
+//         'circle-radius': 5,
+//         'circle-stroke-width': 1,
+//         'circle-stroke-color': '#333333',
+//         'circle-color': '#333333'
+//      }
+// }, 'settlement-subdivision-label');
+
+
+// map.addLayer({
+//   'id': 'poi-labels2',
+//   'type': 'symbol',
+//   'source': 'precincts',
+//   'minzoom': zoomThreshold,
+//   'layout': {
+//       'text-anchor': 'center',
+//       'text-offset': [-4, 0],
+//       'text-allow-overlap': false,
+//       'text-size': 14,
+//       'text-field': ['get', 'name'],
+//   },
+//   'paint': {
+//     "text-color": "#333333"
+//   }
+// });
+
 
   map.on('zoom', function() {
     if (map.getZoom() >= 13) {

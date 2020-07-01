@@ -1,7 +1,7 @@
-{"frames":[{"name":"EAST LAKE STREET NEAR THIRD PRECINCT","longitude":-93.236405,"latitude":44.950174,"zoom":14},
-    {"name":"LAKE STREET, BETWEEN PARK AND HIAWATHA","longitude":-93.25629,"latitude":44.95006,"zoom":14},
-    {"name":"EAST LAKE STREET NEAR FIFTH PRECINCT","longitude":-93.26901,"latitude":44.950949,"zoom":14.5},
+{"frames":[{"name":"EAST LAKE STREET NEAR THIRD PRECINCT","longitude":-93.234874,"latitude":44.948123,"zoom":14},
+    {"name":"EAST LAKE STREET NEAR FIFTH PRECINCT","longitude":-93.277532,"latitude":44.950364,"zoom":14},
+    {"name":"EAST LAKE STREET NEAR MIDTOWN GLOBAL MARKET","longitude":-93.260741,"latitude":44.948676,"zoom":14},
     {"name":"WEST LAKE STREET AND UPTOWN","longitude":-93.291895,"latitude":44.95196,"zoom":14},
+    {"name":"ST. PAUL MIDWAY","longitude":-93.151712,"latitude":44.956681,"zoom":13},
     {"name":"DOWNTOWN MINNEAPOLIS","longitude":-93.272433,"latitude":44.976136,"zoom":14},
-    {"name":"NORTH MINNEAPOLIS","longitude":-93.29565,"latitude":45.011421,"zoom":13},
-    {"name":"ST. PAUL MIDWAY","longitude":-93.151712,"latitude":44.956681,"zoom":13}]}
+    {"name":"NORTH MINNEAPOLIS","longitude":-93.29565,"latitude":45.011421,"zoom":13}]}
