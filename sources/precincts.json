@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "← First Precinct",
+        "name": "First Precinct",
         "address": "19 N 4th St, Minneapolis, MN 55401"
       },
       "geometry": {
@@ -18,7 +18,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "← Fourth Precinct",
+        "name": "Fourth Precinct",
         "address": "1925 Plymouth Ave N, Minneapolis, MN 55411"
       },
       "geometry": {
@@ -32,7 +32,21 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Midtown Global Market →",
+        "name": "Second Precinct",
+        "address": "1911 Central Ave NE, Minneapolis, MN 55418"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.246690,
+          45.008400
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Midtown Global Market",
         "address": "920 E Lake St, Minneapolis, MN 55407"
       },
       "geometry": {
@@ -46,7 +60,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "← Fifth Precinct",
+        "name": "Fifth Precinct",
         "address": "3101 Nicollet Ave, Minneapolis, MN 55408"
       },
       "geometry": {
@@ -60,7 +74,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Third Precinct →",
+        "name": "Third Precinct",
         "address": "3000 Minnehaha Ave, Minneapolis, MN 55406"
       },
       "geometry": {

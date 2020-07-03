@@ -51,6 +51,11 @@ if (selected != null) {
     zoom = mapframes[selected].zoom;
 }
 
+if ((selected != 4) && (selected != null)){ 
+  $("#map-legend").hide();
+  $("#map-legend2").hide();
+}
+
 $("#nameSpace").html(name);
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhcnRyaWJ1bmUiLCJhIjoiY2sxYjRnNjdqMGtjOTNjcGY1cHJmZDBoMiJ9.St9lE8qlWR5jIjkPYd3Wqw';
@@ -60,6 +65,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhcnRyaWJ1bmUiLCJhIjoiY2sxYjRnNjdqMGtjOTNjc
 // Set adaptive sizing
 let mapHeight = window.innerWidth * adaptive_ratio;
 document.getElementById("map").style.height = mapHeight.toString() + "px";
+
+let textspace = [-4,-0.5];
+
+if (selected == 2) {
+  textspace = [3,1.5];
+}
 
 const zoomThreshold = 13;
 
@@ -228,44 +239,45 @@ map.on('load', function() {
        }
   });
 
-//   map.addSource('precincts', {
-//     type: 'geojson',
-//     data: precincts
-//   });
+  map.addSource('precincts', {
+    type: 'geojson',
+    data: precincts
+  });
 
-//   map.addLayer({
-//     'id': 'precincts-layer',
-//     'interactive': true,
-//     'source': 'precincts',
-//     'minzoom': zoomThreshold,
-//     'layout': {},
-//     'type': 'circle',
-//      'paint': {
-//         'circle-opacity': 1,
-//         'circle-radius': 5,
-//         'circle-stroke-width': 1,
-//         'circle-stroke-color': '#333333',
-//         'circle-color': '#333333'
-//      }
-// }, 'settlement-subdivision-label');
+  map.addLayer({
+    'id': 'precincts-layer',
+    'interactive': true,
+    'source': 'precincts',
+    'minzoom': 14,
+    'layout': {},
+    'type': 'circle',
+     'paint': {
+        'circle-opacity': 1,
+        'circle-radius': 4,
+        'circle-stroke-width': 2,
+        'circle-stroke-color': '#333333',
+        'circle-color': '#333333'
+     }
+}, 'settlement-subdivision-label');
 
 
-// map.addLayer({
-//   'id': 'poi-labels2',
-//   'type': 'symbol',
-//   'source': 'precincts',
-//   'minzoom': zoomThreshold,
-//   'layout': {
-//       'text-anchor': 'center',
-//       'text-offset': [-4, 0],
-//       'text-allow-overlap': false,
-//       'text-size': 14,
-//       'text-field': ['get', 'name'],
-//   },
-//   'paint': {
-//     "text-color": "#333333"
-//   }
-// });
+map.addLayer({
+  'id': 'poi-labels2',
+  'type': 'symbol',
+  'source': 'precincts',
+  'minzoom': 14,
+  'layout': {
+      'text-anchor': 'center',
+      'text-offset': textspace,
+      'text-allow-overlap': false,
+      "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+      'text-size': 12,
+      'text-field': ['get', 'name'],
+  },
+  'paint': {
+    "text-color": "#333333"
+  }
+});
 
 
   map.on('zoom', function() {
